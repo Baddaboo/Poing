@@ -10,7 +10,7 @@
 #import "AAScheduleLoader.h"
 #import "AASchoolDayCDTVC.h"
 #import "AATeacherLoader.h"
-#import "PoingSDK.h"
+#import "IolaniSDK.h"
 
 @implementation AAAppDelegate
 
@@ -89,7 +89,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    if ([[PoingSDK sharedInstance] ensureInit]){
+    if ([[IolaniSDK sharedInstance] ensureInit]){
         // Register for push notifications with Parse
         UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
                                                         UIUserNotificationTypeBadge |
@@ -99,7 +99,7 @@
         [application registerUserNotificationSettings:settings];
         [application registerForRemoteNotifications];
         
-        [[PoingSDK sharedInstance] initializeAnalyticsWithOptions:launchOptions];
+        [[IolaniSDK sharedInstance] initializeAnalyticsWithOptions:launchOptions];
     }
     // Override point for customization after application launch.
     [self setupManagedDocument];
@@ -108,11 +108,11 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[PoingSDK sharedInstance] registerPushNotificatinsWithDeviceToken:deviceToken];
+    [[IolaniSDK sharedInstance] registerPushNotificatinsWithDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [[PoingSDK sharedInstance] handlePushWithUserInfo:userInfo];
+    [[IolaniSDK sharedInstance] handlePushWithUserInfo:userInfo];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {

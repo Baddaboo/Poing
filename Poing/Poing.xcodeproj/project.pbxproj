@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01597723AEDE730819F5CA33 /* libPods-Poing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99276E13F65CEBA109B69437 /* libPods-Poing.a */; };
-		12D586051C5B22C9008B7EF8 /* PoingSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D586041C5B22C9008B7EF8 /* PoingSDK.m */; };
+		121D2CE51C5B33000057E1CB /* IolaniSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D2CE41C5B33000057E1CB /* IolaniSDK.m */; };
 		21687FF6187DFB9400E08886 /* Casey's Picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 21687FF5187DFB9400E08886 /* Casey's Picture.png */; };
 		21687FFA187E00CA00E08886 /* Casey's Picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21687FF9187E00CA00E08886 /* Casey's Picture@2x.png */; };
 		45436BEA19BEDEA200F9774A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45436BE919BEDEA200F9774A /* AudioToolbox.framework */; };
@@ -93,9 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12D586031C5B22C9008B7EF8 /* PoingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoingSDK.h; sourceTree = "<group>"; };
-		12D586041C5B22C9008B7EF8 /* PoingSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoingSDK.m; sourceTree = "<group>"; };
-		12D586061C5B22E1008B7EF8 /* PoingConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoingConst.h; sourceTree = "<group>"; };
+		121D2CE21C5B33000057E1CB /* IolaniConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IolaniConst.h; sourceTree = "<group>"; };
+		121D2CE31C5B33000057E1CB /* IolaniSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IolaniSDK.h; sourceTree = "<group>"; };
+		121D2CE41C5B33000057E1CB /* IolaniSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IolaniSDK.m; sourceTree = "<group>"; };
 		21687FF5187DFB9400E08886 /* Casey's Picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Casey's Picture.png"; sourceTree = "<group>"; };
 		21687FF9187E00CA00E08886 /* Casey's Picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Casey's Picture@2x.png"; sourceTree = "<group>"; };
 		45436BE919BEDEA200F9774A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -423,9 +423,9 @@
 				CF85FCF1185D4FB400C70BE1 /* AAScheduleLoader.m */,
 				CFB56D6A1867BBAB007ABFB1 /* AATeacherLoader.h */,
 				CFB56D6B1867BBAB007ABFB1 /* AATeacherLoader.m */,
-				12D586061C5B22E1008B7EF8 /* PoingConst.h */,
-				12D586031C5B22C9008B7EF8 /* PoingSDK.h */,
-				12D586041C5B22C9008B7EF8 /* PoingSDK.m */,
+				121D2CE21C5B33000057E1CB /* IolaniConst.h */,
+				121D2CE31C5B33000057E1CB /* IolaniSDK.h */,
+				121D2CE41C5B33000057E1CB /* IolaniSDK.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -710,7 +710,6 @@
 				CF108BED185C0A01001E6706 /* AAAppDelegate.m in Sources */,
 				CFB56D481866D1D8007ABFB1 /* AADate.m in Sources */,
 				CFB56D4518667B0A007ABFB1 /* AASchedule.m in Sources */,
-				12D586051C5B22C9008B7EF8 /* PoingSDK.m in Sources */,
 				CF85FCFA185D712500C70BE1 /* Cycle+Create.m in Sources */,
 				CF29EEA018BA0BE800F723F0 /* AASlimTeamTVC.m in Sources */,
 				CF85FD70185EF63100C70BE1 /* BellCycle.m in Sources */,
@@ -719,6 +718,7 @@
 				CFB56D5C1867B770007ABFB1 /* Teacher.m in Sources */,
 				CFB56D661867B85F007ABFB1 /* Teacher+Create.m in Sources */,
 				CF85FD16185E649500C70BE1 /* AASchoolDayCDTVC.m in Sources */,
+				121D2CE51C5B33000057E1CB /* IolaniSDK.m in Sources */,
 				CF75D9BD188314550089899D /* AABellCyclePeriodCell.m in Sources */,
 				CFB56D5F1867B770007ABFB1 /* Course.m in Sources */,
 				CF85FD73185EFD5100C70BE1 /* SchoolDay+Info.m in Sources */,
