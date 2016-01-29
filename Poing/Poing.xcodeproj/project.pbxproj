@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01597723AEDE730819F5CA33 /* libPods-Poing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99276E13F65CEBA109B69437 /* libPods-Poing.a */; };
+		12D586051C5B22C9008B7EF8 /* PoingSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D586041C5B22C9008B7EF8 /* PoingSDK.m */; };
 		21687FF6187DFB9400E08886 /* Casey's Picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 21687FF5187DFB9400E08886 /* Casey's Picture.png */; };
 		21687FFA187E00CA00E08886 /* Casey's Picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21687FF9187E00CA00E08886 /* Casey's Picture@2x.png */; };
 		45436BEA19BEDEA200F9774A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45436BE919BEDEA200F9774A /* AudioToolbox.framework */; };
@@ -91,6 +93,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12D586031C5B22C9008B7EF8 /* PoingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoingSDK.h; sourceTree = "<group>"; };
+		12D586041C5B22C9008B7EF8 /* PoingSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoingSDK.m; sourceTree = "<group>"; };
+		12D586061C5B22E1008B7EF8 /* PoingConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoingConst.h; sourceTree = "<group>"; };
 		21687FF5187DFB9400E08886 /* Casey's Picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Casey's Picture.png"; sourceTree = "<group>"; };
 		21687FF9187E00CA00E08886 /* Casey's Picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Casey's Picture@2x.png"; sourceTree = "<group>"; };
 		45436BE919BEDEA200F9774A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -106,6 +111,7 @@
 		456983171B884D5800E7FDB7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		45B75E831B8DA086000B4ACA /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		45D05B56198E331800063674 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		99276E13F65CEBA109B69437 /* libPods-Poing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Poing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF09D99418BA14690050B520 /* AASlimPortraitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASlimPortraitCell.h; sourceTree = "<group>"; };
 		CF09D99518BA14690050B520 /* AASlimPortraitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASlimPortraitCell.m; sourceTree = "<group>"; };
 		CF09D99918BA17180050B520 /* AAMemberDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAMemberDetail.h; sourceTree = "<group>"; };
@@ -204,6 +210,8 @@
 		CFB56D6A1867BBAB007ABFB1 /* AATeacherLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AATeacherLoader.h; sourceTree = "<group>"; };
 		CFB56D6B1867BBAB007ABFB1 /* AATeacherLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AATeacherLoader.m; sourceTree = "<group>"; };
 		CFB56D6D1867C4A2007ABFB1 /* teachers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teachers.json; sourceTree = "<group>"; };
+		D9564E27E70DD6963EBF9230 /* Pods-Poing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poing/Pods-Poing.debug.xcconfig"; sourceTree = "<group>"; };
+		E7109645CEE9578FDDBECA43 /* Pods-Poing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poing/Pods-Poing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +237,7 @@
 				CF108BE1185C0A01001E6706 /* UIKit.framework in Frameworks */,
 				CF108BDD185C0A01001E6706 /* Foundation.framework in Frameworks */,
 				454A030A1BDF664D00ECE079 /* Bolts.framework in Frameworks */,
+				01597723AEDE730819F5CA33 /* libPods-Poing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +254,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A68B9880C4767050D22BC268 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9564E27E70DD6963EBF9230 /* Pods-Poing.debug.xcconfig */,
+				E7109645CEE9578FDDBECA43 /* Pods-Poing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF09D99718BA14790050B520 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +297,7 @@
 				CF108C04185C0A01001E6706 /* PoingTests */,
 				CF108BDB185C0A01001E6706 /* Frameworks */,
 				CF108BDA185C0A01001E6706 /* Products */,
+				A68B9880C4767050D22BC268 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,6 +332,7 @@
 				CF108BDE185C0A01001E6706 /* CoreGraphics.framework */,
 				CF108BE0185C0A01001E6706 /* UIKit.framework */,
 				CF108BFE185C0A01001E6706 /* XCTest.framework */,
+				99276E13F65CEBA109B69437 /* libPods-Poing.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -403,6 +423,9 @@
 				CF85FCF1185D4FB400C70BE1 /* AAScheduleLoader.m */,
 				CFB56D6A1867BBAB007ABFB1 /* AATeacherLoader.h */,
 				CFB56D6B1867BBAB007ABFB1 /* AATeacherLoader.m */,
+				12D586061C5B22E1008B7EF8 /* PoingConst.h */,
+				12D586031C5B22C9008B7EF8 /* PoingSDK.h */,
+				12D586041C5B22C9008B7EF8 /* PoingSDK.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -499,10 +522,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF108C0E185C0A01001E6706 /* Build configuration list for PBXNativeTarget "Poing" */;
 			buildPhases = (
+				7494D6E91244B2C07E62AF0B /* Check Pods Manifest.lock */,
 				CF108BD5185C0A01001E6706 /* Sources */,
 				CF108BD6185C0A01001E6706 /* Frameworks */,
 				CF108BD7185C0A01001E6706 /* Resources */,
 				458C86061BE3324F0016BD2F /* ShellScript */,
+				6D2A21C960264F85DB96A118 /* Embed Pods Frameworks */,
+				5DD5B05DCBD176F720B9C689 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -613,6 +639,51 @@
 			shellPath = /bin/sh;
 			shellScript = "GIT_RELEASE_VERSION=$(git describe --tags --always --dirty)\nCOMMITS=$(git rev-list HEAD | wc -l)\nCOMMITS=$(($COMMITS))\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleShortVersionString\" \"${GIT_RELEASE_VERSION#*v}\"\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${COMMITS}\"";
 		};
+		5DD5B05DCBD176F720B9C689 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poing/Pods-Poing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2A21C960264F85DB96A118 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poing/Pods-Poing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7494D6E91244B2C07E62AF0B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -639,6 +710,7 @@
 				CF108BED185C0A01001E6706 /* AAAppDelegate.m in Sources */,
 				CFB56D481866D1D8007ABFB1 /* AADate.m in Sources */,
 				CFB56D4518667B0A007ABFB1 /* AASchedule.m in Sources */,
+				12D586051C5B22C9008B7EF8 /* PoingSDK.m in Sources */,
 				CF85FCFA185D712500C70BE1 /* Cycle+Create.m in Sources */,
 				CF29EEA018BA0BE800F723F0 /* AASlimTeamTVC.m in Sources */,
 				CF85FD70185EF63100C70BE1 /* BellCycle.m in Sources */,
@@ -785,6 +857,7 @@
 		};
 		CF108C0F185C0A01001E6706 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9564E27E70DD6963EBF9230 /* Pods-Poing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -811,6 +884,7 @@
 		};
 		CF108C10185C0A01001E6706 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7109645CEE9578FDDBECA43 /* Pods-Poing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

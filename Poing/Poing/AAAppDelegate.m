@@ -10,8 +10,7 @@
 #import "AAScheduleLoader.h"
 #import "AASchoolDayCDTVC.h"
 #import "AATeacherLoader.h"
-#import <Parse/Parse.h>
-#import <ParseCrashReporting/ParseCrashReporting.h>
+#import "PoingSDK.h"
 
 @implementation AAAppDelegate
 
@@ -90,39 +89,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Setup Parse Crash Reporting
-    [ParseCrashReporting enable];
-    // Initialize Parse SDK
-    [Parse setApplicationId:@"BFr7sOFOHuNT4jZxebO8o6xOoCZnEqkZwp79P2Ns"
-                  clientKey:@"fMfKdKCIrEhwNmD1pIo6wRihYdXNg4em3BptnpfG"];
-    // Track analytics in Parse
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    // Register for push notifications with Parse
-    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
-                                                    UIUserNotificationTypeBadge |
-                                                    UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
-                                                                             categories:nil];
-    [application registerUserNotificationSettings:settings];
-    [application registerForRemoteNotifications];
+    if ([[PoingSDK sharedInstance] ensureInit]){
+        // Register for push notifications with Parse
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                        UIUserNotificationTypeBadge |
+                                                        UIUserNotificationTypeSound);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                                 categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
+        
+        [[PoingSDK sharedInstance] initializeAnalyticsWithOptions:launchOptions];
+    }
     // Override point for customization after application launch.
     [self setupManagedDocument];
+    
     return YES;
 }
 
-- (void)application:(UIApplication *)application
-didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    // Store the deviceToken in the current Installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    currentInstallation.channels = @[@"global",@"production"];
-    [currentInstallation saveInBackground];
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[PoingSDK sharedInstance] registerPushNotificatinsWithDeviceToken:deviceToken];
 }
 
-- (void)application:(UIApplication *)application
-didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [[PoingSDK sharedInstance] handlePushWithUserInfo:userInfo];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
