@@ -9,13 +9,13 @@
 #ifndef IolaniConst_h
 #define IolaniConst_h
 
-#define Iolani_API_VER @"v1"
+#define IOSDK_API_VER @"v1"
 
 //
 //  Iolani Third-Party Definitions
 //
-#define IO_PARSE_ENABLED
-#define IO_BACKENDLESS_ENABLED
+#define IOSDK_PARSE_ENABLED
+#define IOSDK_BACKENDLESS_ENABLED
 
 #define PARSE_APP_ID @"BFr7sOFOHuNT4jZxebO8o6xOoCZnEqkZwp79P2Ns"
 #define PARSE_CLIENT_SECRET @"fMfKdKCIrEhwNmD1pIo6wRihYdXNg4em3BptnpfG"
