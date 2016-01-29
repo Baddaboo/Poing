@@ -13,7 +13,7 @@ Poing is a schedule data app designed for use at ['Iolani School](http://www.iol
 
 ##Usage - Please read!
 To begin developing on Poing:
-- Install Cocoapods if you haven't already
+- Install [CocoaPods](https://cocoapods.org) if you haven't already
 - Run 'pod install'
 - Open the file Poing.xcworkspace
 
